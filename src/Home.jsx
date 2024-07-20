@@ -25,7 +25,7 @@ function Home() {
   async function generateAnswer(e) {
     e.preventDefault();
     setIsGenerating(true);
-    setAnswer("Generating your answer...");
+ 
 
     try {
       const response = await axios.post(
@@ -95,6 +95,7 @@ function Home() {
           {isGenerating && (
             <div className="flex justify-center items-center mt-4">
               <div className="animate-pulse flex space-x-4">
+                
                 <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-indigo-500 rounded-full"></div>
